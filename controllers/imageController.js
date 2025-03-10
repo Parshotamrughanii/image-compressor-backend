@@ -66,7 +66,7 @@ export const uploadAndCompress = async (req, res) => {
         originalSize: `${originalSize.toFixed(2)} KB`,
         compressedSize: `${compressedSize.toFixed(2)} KB`,
         compressionPercentage,
-        downloadUrl: `http://localhost:7000/download/${safeFilename}`,
+        downloadUrl: `https://image-commpressor-backend-ldetb.ondigitalocean.app/download/${safeFilename}`,
       });
 
       if (index === req.files.length - 1) {
